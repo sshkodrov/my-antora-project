@@ -1,17 +1,17 @@
-# antora.yml
+
 site:
   title: My Project Documentation
-  start_page: ROOT:index  # The starting page for your documentation (e.g., ROOT:index)
+  start_page: ROOT:index 
   url: https://docs.myproject.com
 
 content:
   sources:
-    - url: ./docs     # Points to the 'docs' directory where versioned content is located
+    - url: ./docs     
       branches: main
 
 ui:
   bundle:
-    url: https://antora.org/ui-bundle/antora-ui-default.zip
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
 
 output:
-  dir: ./build        # The directory where Antora will generate the site
+  dir: ./build        
