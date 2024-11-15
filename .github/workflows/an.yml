@@ -13,11 +13,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Java (required for Antora)
-        uses: actions/setup-java@v4
+      - name: Set up JDK 11 (Zulu)
+        uses: actions/setup-java@v2
         with:
+          distribution: 'zulu'
           java-version: '11'
-          distribution: 'adoptium'  
 
       - name: Install Antora
         run: |
