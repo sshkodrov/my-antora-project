@@ -6,7 +6,11 @@ site:
 
 content:
   sources:
+<<<<<<< HEAD
     - url: ./docs     
+=======
+    - url: ./docs     # Points to the 'docs' directory where versioned content is located
+>>>>>>> d93d285 ( dadadadadada)
       branches: main
 
 ui:
