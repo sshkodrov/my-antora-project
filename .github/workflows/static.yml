@@ -17,6 +17,9 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
+          distribution: 'adoptopenjdk'  # Specify a valid distribution (e.g., adoptopenjdk, openjdk)
+          java-package: jdk
+          architecture: x64
 
       - name: Install Antora
         run: |
